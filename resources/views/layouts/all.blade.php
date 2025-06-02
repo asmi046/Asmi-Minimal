@@ -22,6 +22,7 @@
     ])
 </head>
 <body>
+    @include("allicon")
     <main id="main">
         @yield('main')
     </main>

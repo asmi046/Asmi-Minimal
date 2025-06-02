@@ -13,19 +13,36 @@ button,
     font-family: $main_fonts;
     font-size: 16px;
 
+    &__icon {
+        display: inline-flex;
+        gap:20px;
+        span {
+            margin-top: auto;
+            margin-bottom: auto;
+        }
+        .btn_icon {
+            width:20px;
+            height:20px;
+        }
+    }
+
+    &__white {
+        background-color: white;
+        color: $black_color;
+        border-color: $black_color;
+        &:hover {
+            background-color: $black_color;
+            color: white;
+        }
+    }
+
+
+
     &:hover {
-        background-color: $hover_color;
+        background-color: $main_color;
+        color: $black_color;
     }
+
+
 }
 
-.button-white {
-    background-color: white;
-    color: $main_color;
-    border: 1px solid $main_color;
-    text-decoration: none;
-
-    &:hover{
-        color: white;
-        text-decoration: none;
-    }
-}

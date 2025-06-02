@@ -1,3 +1,5 @@
+@use 'vars' as *;
+
 body{
     font-family: $main_fonts;
     font-size: 16px;
@@ -9,6 +11,16 @@ section{
     width: 100%;
     padding-top: $section_space;
     padding-bottom: $section_space;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: $head_fonts;
+    font-weight: bold;
+    line-height: 1.2;
 }
 
 .container{
