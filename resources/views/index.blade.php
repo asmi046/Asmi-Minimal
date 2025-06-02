@@ -29,16 +29,13 @@
             <div class="center">
                 <h1>Разработка <br>цифровыx сервисов <br>и сайтов</h1>
                 <div class="control_btn">
-                    <a href="" class="button button__white button__icon">
+                    <a href="{{ config('contacts.tg_link') }}" class="button button__white button__icon">
 
                         <svg class="btn_icon">
                             <use xlink:href="#tg_icon_to_btn"></use>
                         </svg>
 
                         <span>Обсудить проект</span>
-
-
-
                     </a>
                 </div>
             </div>
