@@ -61,9 +61,9 @@ class PageSeeder extends Seeder
             ],
 
             [
-                'title' => "О файлах Сookie",
-                'slug' => Str::slug("О файлах Сookie"),
-                'description' => file_get_contents(public_path('tmp_data/page/accept.html')),
+                'title' => "О файлах Cookie",
+                'slug' => Str::slug("О файлах Cookie"),
+                'description' => file_get_contents(public_path('tmp_data/page/cookie.html')),
             ],
 
         ];

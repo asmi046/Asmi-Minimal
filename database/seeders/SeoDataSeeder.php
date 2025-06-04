@@ -33,6 +33,12 @@ class SeoDataSeeder extends Seeder
                 'seo_description' => "Согласие на обработку персональных данных",
                 'page_title' => "",
             ],
+            [
+                'url' => "page/o-failax-cookie",
+                'seo_title' => "Подробнее о файлах cookie",
+                'seo_description' => "Подробнее о файлах cookie",
+                'page_title' => "",
+            ],
         ];
 
         DB::table("seo_data")->insert($data);
