@@ -1,0 +1,103 @@
+@use "vars" as *;
+
+.main-banner {
+    .main-banner__top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 30px;
+        margin-bottom: 30px;
+    }
+
+    .main-banner__top-left {
+        flex: 1;
+
+        h1 {
+            font-family: $head_fonts;
+            font-size: 48px;
+            font-weight: 300;
+            line-height: 1.1;
+            margin-bottom: 20px;
+        }
+
+        p {
+            line-height: 1.6;
+        }
+    }
+
+    .main-banner__top-right {
+        display: flex;
+        flex-direction: column;
+        flex-shrink: 0;
+    }
+
+    .main-banner__stat-number {
+        font-family: $head_fonts;
+        font-size: 72px;
+        font-weight: 500;
+        line-height: 1;
+        color: $main_color;
+    }
+
+    .main-banner__stat-label {
+        font-size: 16px;
+        line-height: 1.4;
+        max-width: 160px;
+    }
+
+    &__video-wrap {
+        width: 100%;
+        border-radius: $border_rad_big;
+        overflow: hidden;
+    }
+
+    .main-banner__video {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width: 819px) {
+    .main-banner {
+        .main-banner__top-left h1 {
+            font-size: 32px;
+        }
+
+        .main-banner__stat-number {
+            font-size: 56px;
+        }
+    }
+}
+
+@media (max-width: 519px) {
+    .main-banner {
+        &__video-wrap {
+            border-radius: $border_rad_medium;
+        }
+
+        .main-banner__top {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .main-banner__top-left h1 {
+            font-weight: 600;
+            font-size: 24px;
+        }
+
+        .main-banner__top-right {
+            align-items: flex-start;
+            text-align: left;
+        }
+
+        .main-banner__top-right {
+            flex-direction: row;
+            gap: 20px;
+        }
+
+        .main-banner__stat-number {
+            font-size: 48px;
+        }
+    }
+}

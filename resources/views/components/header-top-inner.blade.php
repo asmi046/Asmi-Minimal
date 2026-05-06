@@ -1,5 +1,5 @@
 <div class="top">
-    <a  href="{{ route('home') }}">
+    <a href="{{ route('home') }}">
         <img class="logo logo_white" src="{{ asset('img/logo.svg') }}" alt="">
         <img class="logo logo_black" src="{{ asset('img/logo-black.svg') }}" alt="">
     </a>
@@ -14,7 +14,7 @@
             <svg class="sprite_icon __black">
                 <use xlink:href="#tg_icon_black"></use>
             </svg>
-        </a
+        </a>
 
         <a href="{{ config('contacts.ws_link') }}" class="sl_link ws_link">
             <svg class="sprite_icon __white">
