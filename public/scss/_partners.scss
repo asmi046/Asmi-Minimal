@@ -1,0 +1,65 @@
+@use "vars" as *;
+
+.partners {
+    .partners__marquee {
+        display: flex;
+        overflow: hidden;
+        gap: 30px;
+    }
+
+    .partners__track {
+        flex: 0 0 auto;
+        min-width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 30px;
+        animation: partners-scroll 30s linear infinite;
+
+        img {
+            width: auto;
+            height: 60px;
+            object-fit: contain;
+            filter: grayscale(100%);
+            transition: $main_transition;
+        }
+
+        img:hover {
+            filter: grayscale(0);
+        }
+    }
+}
+
+@keyframes partners-scroll {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(calc(-100% - 30px));
+    }
+}
+
+@media (max-width: 819px) {
+    .partners {
+        .partners__track {
+            gap: 20px;
+
+            img {
+                height: 48px;
+            }
+        }
+    }
+}
+
+@media (max-width: 519px) {
+    .partners {
+        .partners__marquee {
+            gap: 20px;
+        }
+
+        .partners__track img {
+            height: 40px;
+        }
+    }
+}
