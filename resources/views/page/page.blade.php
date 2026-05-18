@@ -1,7 +1,6 @@
 @extends('layouts.all')
 
 @section('main')
-    <x-page-header></x-page-header>
     <section class="page_section">
         <div class="container">
             <x-breadcrumbs.main :title="$page->title"></x-breadcrumbs.main>
@@ -12,4 +11,3 @@
         </div>
     </section>
 @endsection
-

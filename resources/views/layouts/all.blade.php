@@ -54,7 +54,9 @@
 <body>
     @include('allicon')
     <main id="main">
+        <x-header></x-header>
         @yield('main')
+        <x-footer></x-footer>
     </main>
 
     <div class="modal_win" id="modal_app">

@@ -51,5 +51,12 @@
         .services__list {
             grid-template-columns: 1fr;
         }
+        .services__card {
+            padding-bottom: 70px;
+
+            img {
+                height: 50px;
+            }
+        }
     }
 }
