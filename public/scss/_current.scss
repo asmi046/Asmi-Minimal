@@ -73,6 +73,21 @@ img {
     }
 }
 
+.colls {
+    display: flex;
+    justify-content: space-between;
+
+    .col {
+        flex: 1;
+    }
+}
+
+.map_in_page {
+    width: 100%;
+    min-height: 300px;
+    border: 1px solid $gray_border_color;
+}
+
 @media (max-width: 1440px) {
     .container {
         width: 96%;
