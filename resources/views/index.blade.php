@@ -92,48 +92,5 @@
         </div>
     </section>
 
-    <section id="partners" class="partners">
-        <div class="container">
-            <h2>Нам доверяют</h2>
-
-            <div class="partners__marquee">
-                <div class="partners__track">
-                    <img src="{{ asset('img/partners/partner_0.webp') }}" alt="Партнер 0" loading="lazy">
-                    <img src="{{ asset('img/partners/partner_1.webp') }}" alt="Партнер 1" loading="lazy">
-                    <img src="{{ asset('img/partners/partner_2.webp') }}" alt="Партнер 2" loading="lazy">
-                    <img src="{{ asset('img/partners/partner_3.webp') }}" alt="Партнер 3" loading="lazy">
-                    <img src="{{ asset('img/partners/partner_4.webp') }}" alt="Партнер 4" loading="lazy">
-                    <img src="{{ asset('img/partners/partner_5.webp') }}" alt="Партнер 5" loading="lazy">
-                    <img src="{{ asset('img/partners/partner_6.webp') }}" alt="Партнер 6" loading="lazy">
-                    <img src="{{ asset('img/partners/partner_7.webp') }}" alt="Партнер 7" loading="lazy">
-                    <img src="{{ asset('img/partners/partner_8.webp') }}" alt="Партнер 8" loading="lazy">
-                    <img src="{{ asset('img/partners/partner_9.webp') }}" alt="Партнер 9" loading="lazy">
-                    <img src="{{ asset('img/partners/partner_9_1.webp') }}" alt="Партнер 9-1" loading="lazy">
-                    <img src="{{ asset('img/partners/partner_10.webp') }}" alt="Партнер 10" loading="lazy">
-                    <img src="{{ asset('img/partners/partner_11.webp') }}" alt="Партнер 11" loading="lazy">
-                    <img src="{{ asset('img/partners/partner_12.webp') }}" alt="Партнер 12" loading="lazy">
-                    <img src="{{ asset('img/partners/partner_13.webp') }}" alt="Партнер 13" loading="lazy">
-                    <img src="{{ asset('img/partners/partner_14.webp') }}" alt="Партнер 14" loading="lazy">
-                </div>
-                <div class="partners__track" aria-hidden="true">
-                    <img src="{{ asset('img/partners/partner_0.webp') }}" alt="" loading="lazy">
-                    <img src="{{ asset('img/partners/partner_1.webp') }}" alt="" loading="lazy">
-                    <img src="{{ asset('img/partners/partner_2.webp') }}" alt="" loading="lazy">
-                    <img src="{{ asset('img/partners/partner_3.webp') }}" alt="" loading="lazy">
-                    <img src="{{ asset('img/partners/partner_4.webp') }}" alt="" loading="lazy">
-                    <img src="{{ asset('img/partners/partner_5.webp') }}" alt="" loading="lazy">
-                    <img src="{{ asset('img/partners/partner_6.webp') }}" alt="" loading="lazy">
-                    <img src="{{ asset('img/partners/partner_7.webp') }}" alt="" loading="lazy">
-                    <img src="{{ asset('img/partners/partner_8.webp') }}" alt="" loading="lazy">
-                    <img src="{{ asset('img/partners/partner_9.webp') }}" alt="" loading="lazy">
-                    <img src="{{ asset('img/partners/partner_9_1.webp') }}" alt="" loading="lazy">
-                    <img src="{{ asset('img/partners/partner_10.webp') }}" alt="" loading="lazy">
-                    <img src="{{ asset('img/partners/partner_11.webp') }}" alt="" loading="lazy">
-                    <img src="{{ asset('img/partners/partner_12.webp') }}" alt="" loading="lazy">
-                    <img src="{{ asset('img/partners/partner_13.webp') }}" alt="" loading="lazy">
-                    <img src="{{ asset('img/partners/partner_14.webp') }}" alt="" loading="lazy">
-                </div>
-            </div>
-        </div>
-    </section>
+    <x-partners />
 @endsection
