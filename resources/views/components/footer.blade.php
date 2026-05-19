@@ -25,6 +25,10 @@
                      <li><a href="#">Услуги</a></li>
                      <li><a href="#">Портфолио</a></li>
                      <li><a href="#">Контакты</a></li>
+                     <li><a href="/page/politika-v-oblasti-obrabotki-personalnyx-dannyx">Политика конфиденциальности</a>
+                     </li>
+                     <li><a href="/page/soglasie-na-obrabotku-personalnyx-dannyx">Согласие на обработку персональных
+                             данных</a></li>
                  </ul>
              </div>
 
@@ -47,6 +51,8 @@
 
                  <p class="site-footer__inn">ИНН: {{ config('contacts.inn') }}</p>
                  <p class="site-footer__ogrn">ОГРН: {{ config('contacts.ogrn') }}</p>
+
+
              </div>
 
          </div>

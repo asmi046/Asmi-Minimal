@@ -1,10 +1,10 @@
-@use '../vars' as *;
+@use "../vars" as *;
 
 button,
 .button {
     background-color: $main_color;
     border: 1px solid $main_color;
-    color:white;
+    color: white;
     padding: 10px 30px;
     cursor: pointer;
     transition: $main_transition;
@@ -12,17 +12,18 @@ button,
     line-height: 1;
     font-family: $main_fonts;
     font-size: 16px;
+    text-decoration: none;
 
     &__icon {
         display: inline-flex;
-        gap:20px;
+        gap: 20px;
         span {
             margin-top: auto;
             margin-bottom: auto;
         }
         .btn_icon {
-            width:20px;
-            height:20px;
+            width: 20px;
+            height: 20px;
         }
     }
 
@@ -36,13 +37,10 @@ button,
         }
     }
 
-
-
     &:hover {
         background-color: $main_color;
         color: $black_color;
+        text-decoration: none;
+        border-radius: 5px;
     }
-
-
 }
-
