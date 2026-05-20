@@ -3,11 +3,10 @@
 namespace App\Http\Controllers;
 
 use App\Models\Service;
-use Illuminate\Http\JsonResponse;
 
 class ServiceController extends Controller
 {
-    public function index(): JsonResponse
+    public function index()
     {
         $items = Service::query()
             ->orderBy('sort_order')
@@ -17,7 +16,7 @@ class ServiceController extends Controller
         return view('zagl');
     }
 
-    public function show(string $slug): JsonResponse
+    public function show(string $slug)
     {
         $item = Service::query()
             ->where('slug', $slug)

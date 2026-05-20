@@ -3,11 +3,10 @@
 namespace App\Http\Controllers;
 
 use App\Models\Portfolio;
-use Illuminate\Http\JsonResponse;
 
 class PortfolioController extends Controller
 {
-    public function index(): JsonResponse
+    public function index()
     {
         $items = Portfolio::query()
             ->orderBy('sort_order')
@@ -17,7 +16,7 @@ class PortfolioController extends Controller
         return view('zagl');
     }
 
-    public function show(string $slug): JsonResponse
+    public function show(string $slug)
     {
         $item = Portfolio::query()
             ->where('slug', $slug)
