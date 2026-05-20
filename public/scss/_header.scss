@@ -18,8 +18,10 @@
     .site-header__contacts {
         display: flex;
         align-items: center;
+        justify-content: flex-end;
         gap: 14px;
         margin-left: auto;
+        flex: 1;
 
         a {
             color: $black_color;
@@ -33,11 +35,16 @@
     }
 
     .site-header__menu {
+        margin: 0 auto;
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         .menue_puncts_list {
             display: flex;
             align-items: center;
             gap: 14px;
-            margin: 0;
+
             padding: 0;
             list-style: none;
 

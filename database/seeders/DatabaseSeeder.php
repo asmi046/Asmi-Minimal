@@ -2,7 +2,6 @@
 
 namespace Database\Seeders;
 
-use App\Models\User;
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
@@ -18,6 +17,8 @@ class DatabaseSeeder extends Seeder
             PageSeeder::class,
             MenuSeeder::class,
             ContactSeeder::class,
+            PortfolioSeeder::class,
+            ServiceSeeder::class,
         ]);
 
         // User::factory(10)->create();

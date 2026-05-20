@@ -10,26 +10,12 @@
 
              <div class="site-footer__col">
                  <h2>Услуги</h2>
-                 <ul>
-                     <li><a href="#">Разработка интернет магазина</a></li>
-                     <li><a href="#">Разработка корпоративного сайта</a></li>
-                     <li><a href="#">разработка посадочной страницы</a></li>
-                     <li><a href="#">Разработка сайтов на Wordpress</a></li>
-                     <li><a href="#">Разработка сайтов на 1С Битрикс</a></li>
-                 </ul>
+                 <x-menues.puncts name="Меню в подвале"></x-menues.puncts>
              </div>
 
              <div class="site-footer__col">
                  <h2>Меню</h2>
-                 <ul>
-                     <li><a href="#">Услуги</a></li>
-                     <li><a href="#">Портфолио</a></li>
-                     <li><a href="/contacts">Контакты</a></li>
-                     <li><a href="/page/politika-v-oblasti-obrabotki-personalnyx-dannyx">Политика конфиденциальности</a>
-                     </li>
-                     <li><a href="/page/soglasie-na-obrabotku-personalnyx-dannyx">Согласие на обработку персональных
-                             данных</a></li>
-                 </ul>
+                 <x-menues.puncts name="Полезная информация"></x-menues.puncts>
              </div>
 
              <div class="site-footer__col site-footer__col--contacts">
