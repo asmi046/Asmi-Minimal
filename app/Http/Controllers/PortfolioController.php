@@ -14,7 +14,7 @@ class PortfolioController extends Controller
             ->orderBy('id')
             ->get();
 
-        return response()->json($items);
+        return view('zagl');
     }
 
     public function show(string $slug): JsonResponse
@@ -23,6 +23,6 @@ class PortfolioController extends Controller
             ->where('slug', $slug)
             ->firstOrFail();
 
-        return response()->json($item);
+        return view('zagl');
     }
 }
