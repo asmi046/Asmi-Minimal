@@ -1,6 +1,12 @@
 <?php
 
 return [
+    'site_name' => env('SITE_NAME', 'Асми Студио - Разработка сайтов, web-приложений и цифровых сервисов'),
+    'site_url' => env('SITE_URL', 'https://asmi-studio.ru'),
+    'site_description' => env('SITE_DESCRIPTION', 'Услуги по разработке цифровых сервисов, web-приложений и сайтов. Полный спектр услуг от опытной комманды разработчиков'),
+    'site_img' => env('SITE_IMG', '/img/og_img.jpg'),
+    'site_logo' => env('SITE_LOGO', '/img/logo_asmi.png'),
+
     'phone' => env('CONTACT_PHONE', '+7 903 633 08 01'),
     'email' => env('CONTACT_EMAIL', 'info@asmi-studio.ru'),
     'tg_link' => env('CONTACT_TG_LINK', 'https://t.me/asmist'),

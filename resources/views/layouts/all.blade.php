@@ -53,6 +53,25 @@
 
 <body>
     @include('allicon')
+
+    @php
+        $organizationJsonLd = JsonLd::organization()
+            ->name(config('contacts.site_name'))
+            ->url(config('contacts.site_url'))
+            ->logo(asset(ltrim(config('contacts.site_logo'), '/')))
+            ->description(config('contacts.site_description'))
+            ->email(config('contacts.email'))
+            ->telephone(config('contacts.phone'))
+            ->sameAs(
+                array_values(
+                    array_filter([config('contacts.tg_link'), config('contacts.ws_link'), config('contacts.max_link')]),
+                ),
+            );
+    @endphp
+
+    {!! JsonLd::website()->name(config('contacts.site_name'))->url(config('contacts.site_url'))->description(config('contacts.site_description'))->image(asset(ltrim(config('contacts.site_img'), '/')))->copyrightHolder($organizationJsonLd)->render() !!}
+    {!! $organizationJsonLd->render() !!}
+
     <main id="main">
         <x-header></x-header>
         @yield('main')
