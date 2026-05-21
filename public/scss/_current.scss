@@ -3,6 +3,9 @@
 body {
     font-family: $main_fonts;
     font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 header,
@@ -11,6 +14,17 @@ section {
     width: 100%;
     padding-top: $section_space;
     padding-bottom: $section_space;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+footer {
+    margin-top: auto;
 }
 
 h1,
