@@ -13,7 +13,7 @@ class ServiceController extends Controller
             ->orderBy('id')
             ->get();
 
-        return view('zagl');
+        return view('services', compact('items'));
     }
 
     public function show(string $slug)
