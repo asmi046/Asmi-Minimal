@@ -18,3 +18,5 @@ Route::get('/services', [ServiceController::class, 'index'])->name('services.ind
 Route::get('/services/{slug}', [ServiceController::class, 'show'])->name('services.show');
 
 Route::get('/page/{slug}', [PageController::class, 'index'])->name('page');
+
+Route::get('/sitemap.xml', [SitemapController::class, 'index']);
