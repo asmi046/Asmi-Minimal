@@ -6,4 +6,10 @@
         image="img/services/main_service.webp" image-alt="Наши услуги" />
 
     <x-services title="Список услуг" />
+
+    <section id="faq" class="services-page-faq">
+        <div class="container">
+            <x-faq-package-faq section="Страница услуги" />
+        </div>
+    </section>
 @endsection

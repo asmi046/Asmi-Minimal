@@ -4,8 +4,52 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "0ac494b0de0ad7c6f9db251f85e24be7",
+    "content-hash": "5f58767ea01bebdc8e49307ecaea6855",
     "packages": [
+        {
+            "name": "asmi/laravel-faq",
+            "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/asmi046/faq_laravel.git",
+                "reference": "c505d97a5c2585ed8812c7f8176d49d4ada41154"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/asmi046/faq_laravel/zipball/c505d97a5c2585ed8812c7f8176d49d4ada41154",
+                "reference": "c505d97a5c2585ed8812c7f8176d49d4ada41154",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/database": "^10.0|^11.0|^12.0",
+                "illuminate/support": "^10.0|^11.0|^12.0",
+                "illuminate/view": "^10.0|^11.0|^12.0",
+                "php": "^8.1"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Asmi\\LaravelFaq\\FaqServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Asmi\\LaravelFaq\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Laravel package with FAQ model, migration, seeder and Blade component",
+            "support": {
+                "issues": "https://github.com/asmi046/faq_laravel/issues",
+                "source": "https://github.com/asmi046/faq_laravel/tree/1.0.1"
+            },
+            "time": "2026-05-28T16:08:55+00:00"
+        },
         {
             "name": "asmi046/laravel-jsonld",
             "version": "0.1.2",

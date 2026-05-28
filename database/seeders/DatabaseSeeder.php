@@ -19,6 +19,7 @@ class DatabaseSeeder extends Seeder
             ContactSeeder::class,
             PortfolioSeeder::class,
             ServiceSeeder::class,
+            FaqSeeder::class,
         ]);
 
         // User::factory(10)->create();
