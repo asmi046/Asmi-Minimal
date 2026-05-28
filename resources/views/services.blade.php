@@ -9,6 +9,7 @@
 
     <section id="faq" class="services-page-faq">
         <div class="container">
+            <h2>Часто задаваемые вопросы</h2>
             <x-faq-package-faq section="Страница услуги" />
         </div>
     </section>
