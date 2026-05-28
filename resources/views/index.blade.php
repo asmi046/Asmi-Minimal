@@ -27,48 +27,7 @@
         </div>
     </section>
 
-    <section id="services" class="services">
-        <div class="container">
-            <h2>Услуги</h2>
-
-            <div class="services__list">
-                <article class="services__card">
-                    <h3>Разработка сайтов</h3>
-                    <ul>
-                        <li><a href="#">Разработка интернет магазина</a></li>
-                        <li><a href="#">Разработка корпоративного сайта</a></li>
-                        <li><a href="#">разработка посадочной страницы</a></li>
-                        <li><a href="#">Разработка сайтов на Wordpress</a></li>
-                        <li><a href="#">Разработка сайтов на 1С Битрикс</a></li>
-                    </ul>
-
-                    <img src="{{ asset('img/services/development.webp') }}" alt="Разработка сайтов" loading="lazy">
-                </article>
-
-                <article class="services__card">
-                    <h3>Сопровождение сайтов</h3>
-                    <ul>
-                        <li><a href="#">Комплексное сопровождение сайтов</a></li>
-                        <li><a href="#">Сопровождение сайтов на Wordpress</a></li>
-                        <li><a href="#">Сопровождение сайтов на 1С Битрикс</a></li>
-                    </ul>
-
-                    <img src="{{ asset('img/services/support.webp') }}" alt="Сопровождение сайтов" loading="lazy">
-                </article>
-
-                <article class="services__card">
-                    <h3>Графический дизайн</h3>
-                    <ul>
-                        <li><a href="#">Разработка логотипа</a></li>
-                        <li><a href="#">Разарботка буклета</a></li>
-                        <li><a href="#">Разработка фирменного стиля</a></li>
-                    </ul>
-
-                    <img src="{{ asset('img/services/design.webp') }}" alt="Графический дизайн" loading="lazy">
-                </article>
-            </div>
-        </div>
-    </section>
+    <x-services title="Услуги" />
 
     <section id="about-company" class="about-company">
         <div class="container text_styles">
