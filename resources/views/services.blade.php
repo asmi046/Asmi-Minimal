@@ -7,6 +7,8 @@
 
     <x-services title="Список услуг" />
 
+    <x-services-competencies />
+
     <section id="faq" class="services-page-faq">
         <div class="container">
             <h2>Часто задаваемые вопросы</h2>

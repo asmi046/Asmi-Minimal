@@ -51,5 +51,7 @@
         </div>
     </section>
 
+    <x-services-competencies />
+
     <x-partners />
 @endsection
