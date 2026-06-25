@@ -1,0 +1,17 @@
+@use "vars" as *;
+
+.razrabotka-support {
+    .razrabotka-support__box {
+        border: 1px solid $gray_border_color;
+        border-radius: $border_rad;
+        padding: 10px 20px;
+    }
+}
+
+@media (max-width: 519px) {
+    .razrabotka-support {
+        .razrabotka-support__box {
+            padding: 10px 14px;
+        }
+    }
+}

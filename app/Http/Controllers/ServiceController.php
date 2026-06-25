@@ -22,6 +22,8 @@ class ServiceController extends Controller
             ->where('slug', $slug)
             ->firstOrFail();
 
-        return view('zagl');
+        $template = $item->template ?? 'zagl';
+
+        return view($template, compact('item'));
     }
 }

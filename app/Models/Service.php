@@ -11,6 +11,7 @@ class Service extends Model
         'slug',
         'category',
         'sort_order',
+        'template',
     ];
 
     protected $casts = [

@@ -13,9 +13,11 @@ class Portfolio extends Model
         'sort_order',
         'cover',
         'description',
+        'gallery',
     ];
 
     protected $casts = [
         'sort_order' => 'integer',
+        'gallery' => 'array',
     ];
 }

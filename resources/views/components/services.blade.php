@@ -9,7 +9,7 @@
 
                     <ul>
                         @foreach ($card['items'] as $service)
-                            <li><a href="#">{{ $service->title }}</a></li>
+                            <li><a href="{{ route('services.show', $service->slug) }}">{{ $service->title }}</a></li>
                         @endforeach
                     </ul>
 

@@ -1,0 +1,12 @@
+@use "vars" as *;
+
+.razrabotka-seo {
+    .razrabotka-seo__content {
+        border-top: 1px solid $gray_border_color;
+        padding-top: 10px;
+    }
+
+    p {
+        margin-bottom: 16px;
+    }
+}

@@ -1,0 +1,58 @@
+@use "vars" as *;
+
+.razrabotka-page {
+    .rz-grid {
+        display: grid;
+        gap: 20px;
+    }
+
+    .rz-grid--2 {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .rz-grid--3 {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .rz-grid--4 {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+
+    .rz-card {
+        border: 1px solid $gray_border_color;
+        border-radius: $border_rad;
+        padding: 20px;
+        background-color: white;
+
+        h3 {
+            margin-bottom: 12px;
+        }
+
+        p {
+            margin: 0;
+        }
+    }
+}
+
+@media (max-width: 819px) {
+    .razrabotka-page {
+        .rz-grid--3,
+        .rz-grid--4 {
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+    }
+}
+
+@media (max-width: 519px) {
+    .razrabotka-page {
+        .rz-grid--2,
+        .rz-grid--3,
+        .rz-grid--4 {
+            grid-template-columns: 1fr;
+        }
+
+        .rz-card {
+            padding: 16px;
+        }
+    }
+}

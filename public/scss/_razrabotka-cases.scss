@@ -1,0 +1,48 @@
+@use "vars" as *;
+
+.razrabotka-cases {
+    .razrabotka-cases__card {
+        border: 1px solid $gray_border_color;
+        border-radius: $border_rad;
+        overflow: hidden;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+
+        img {
+            height: 200px;
+            border-bottom: 1px solid $gray_border_color;
+        }
+    }
+
+    .razrabotka-cases__body {
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        flex: 1;
+
+        p {
+            margin: 0;
+        }
+
+        .button {
+            margin-top: auto;
+            align-self: flex-start;
+        }
+    }
+}
+
+@media (max-width: 519px) {
+    .razrabotka-cases {
+        .razrabotka-cases__card {
+            img {
+                height: 170px;
+            }
+        }
+
+        .razrabotka-cases__body {
+            padding: 16px;
+        }
+    }
+}

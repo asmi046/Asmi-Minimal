@@ -16,6 +16,7 @@ return new class extends Migration
             $table->string('title');
             $table->string('slug')->unique();
             $table->string('category');
+            $table->string('template')->nullable()->comment('Имя шаблона');
             $table->unsignedInteger('sort_order')->default(100);
             $table->timestamps();
         });

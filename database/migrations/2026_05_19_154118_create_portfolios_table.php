@@ -19,6 +19,7 @@ return new class extends Migration
             $table->unsignedInteger('sort_order')->default(100);
             $table->string('cover', 800);
             $table->text('description')->nullable();
+            $table->json('gallery')->nullable();
             $table->timestamps();
         });
     }

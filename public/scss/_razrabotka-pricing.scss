@@ -1,0 +1,12 @@
+@use "vars" as *;
+
+.razrabotka-pricing {
+    .razrabotka-pricing__table-wrap {
+        overflow-x: auto;
+        margin: 20px 0;
+    }
+
+    .button {
+        margin-top: 10px;
+    }
+}

@@ -4,6 +4,7 @@ namespace Database\Seeders;
 
 use App\Models\Portfolio;
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\Storage;
 
 class PortfolioSeeder extends Seeder
 {
@@ -12,14 +13,16 @@ class PortfolioSeeder extends Seeder
      */
     public function run(): void
     {
+        Storage::disk('public')->put('portfolio/potapov_obl.webp', file_get_contents(public_path('seedet_data/portfolio/potapov/potapov_obl.webp')), 'public');
+
         $items = [
             [
-                'title' => 'Корпоративный сайт для B2B-компании',
-                'slug' => 'korporativnyj-sajt-dlya-b2b-kompanii',
-                'category' => 'Разработка сайтов',
+                'title' => 'Разработка посадочной страницы для ведущего Александра Потапова',
+                'slug' => 'razrabotka-saita-dlya-vedushhego-aleksandra-potapova',
+                'category' => 'Разработка',
                 'sort_order' => 10,
-                'cover' => 'img/portfolio/portfolio_1.webp',
-                'description' => 'Запуск корпоративного сайта с интеграцией форм заявок и аналитики.',
+                'cover' => 'portfolio/potapov_obl.webp',
+                'description' => file_get_contents(public_path('seedet_data/portfolio/potapov/text.html')),
             ],
             [
                 'title' => 'Интернет-магазин промышленного оборудования',

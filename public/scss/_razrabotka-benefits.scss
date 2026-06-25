@@ -1,0 +1,7 @@
+@use "vars" as *;
+
+.razrabotka-benefits {
+    .rz-card {
+        background: linear-gradient(180deg, white 0%, $gray_bg_color 100%);
+    }
+}
